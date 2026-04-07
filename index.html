@@ -7,21 +7,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="primary-nav">
         <div class="container nav-inner">
-            <a href="#" class="logo">
-                <div class="logo-box">
-                    <span class="logo-mark">M</span>
-                    <div class="logo-text-group">
-                        <span class="logo-main">MangaLam</span>
-                        <span class="logo-sub">HDPE | PIPES</span>
-                    </div>
-                </div>
+            <a href="#" style="text-decoration:none;">
+                <img src="assets/images/logo.png" alt="Mangalam Pipes Logo" class="logo" onerror="this.src='https://via.placeholder.com/150x50?text=MANGALAM+PIPES'">
             </a>
 
             <nav class="header-nav">
@@ -90,31 +84,33 @@
 
             <div class="hero-content">
                 <div class="cert-badges">
-                    <div class="cert-badge"><span class="cert-icon">📐</span> BIS Certified</div>
-                    <div class="cert-badge"><span class="cert-icon">🏆</span> ISO Certified</div>
-                    <div class="cert-badge"><span class="cert-icon">⚙️</span> CE Certified</div>
+                    <div class="cert-badge"><span class="cert-icon"><img src="assets/images/bsis.png" alt="BIS" onerror="this.style.display='none'"></span> BIS Certified</div>
+                    <div class="cert-badge"><span class="cert-icon"><img src="assets/images/isi.png" alt="ISO" onerror="this.style.display='none'"></span> ISO Certified</div>
+                    <div class="cert-badge"><span class="cert-icon"><img src="assets/images/ce.png" alt="CE" onerror="this.style.display='none'"></span> CE Certified</div>
                 </div>
 
                 <h1 class="hero-title">Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
 
                 <ul class="hero-features">
                     <li><span class="feature-dot"></span> Leak-Proof Fusion Joints</li>
-                    <li><span class="feature-dot"></span> Chemical & Corrosion Resistance</li>
-                    <li><span class="feature-dot"></span> 50+ Year Expected Service Life</li>
-                    <li><span class="feature-dot"></span> Flexible Installation on Uneven Terrain</li>
-                    <li><span class="feature-dot"></span> High Impact Strength</li>
+                    <li><span class="feature-dot"></span> Chemical Resistance</li>
+                    <li><span class="feature-dot"></span> 50+ Year Service Life</li>
+                    <li><span class="feature-dot"></span> Flexible Installation</li>
+                    <li><span class="feature-dot"></span> Flexible Installation</li>
                 </ul>
 
                 <div class="price-box">
                     <div class="price-block">
-                        <div class="price-label">PRICE RANGE</div>
-                        <div class="price-value">₹4,80,000 - 7,90,000 <span style="font-size:0.9rem; font-weight:500; color:var(--text-muted)">/ km</span></div>
+                        <div class="price-label">Price Range</div>
+                        <div class="price-value">₹4,80,000 - 7,90,000</div>
                     </div>
                     <div class="shipping-badges">
-                        <span class="badge badge-yellow">🚚 Shipping: 6-12 days</span>
-                        <span class="badge badge-orange">↩ Returns: Subject to material conditions</span>
+                        <span class="badge badge-yellow">Shipping: 6-12 days</span>
+                        <span class="badge badge-orange">Returns: if returned within 7 days</span>
                     </div>
-                    <div class="cert-banner">Certifications: ISO 9001:2015, BIS IS:4984</div>
+                    <div class="shipping-badges" style="margin-top: 10px;">
+                        <span class="badge" style="background: #f1f5f9; color: var(--text-muted); padding: 8px 12px; display: inline-block;">Certifications: ISO Certified, BIS Certified</span>
+                    </div>
                 </div>
 
                 <div class="hero-actions">
@@ -126,33 +122,29 @@
         </div>
     </section>
 
-    <section class="trust-section" id="about">
-        <div class="container">
-            <h3 class="trust-label">Trusted by Hundreds of Companies Globally</h3>
-            <div class="trust-logos">
-                <div class="trust-logo-box">
-                    <div class="euro-title">Euroflex</div>
-                    <div class="euro-sub">INFRASTRUCTURE</div>
-                </div>
-                <div class="trust-logo-box">
-                    <div class="euro-title">Euroflex</div>
-                    <div class="euro-sub">WATER RESOURCES</div>
-                </div>
-                <div class="trust-logo-box">
-                    <div class="euro-title">Euroflex</div>
-                    <div class="euro-sub">MISSION PARTNER</div>
-                </div>
-                <div class="trust-logo-box">
-                    <div class="euro-title">Euroflex</div>
-                    <div class="euro-sub">PROJECTS LTD</div>
-                </div>
-                <div class="trust-logo-box">
-                    <div class="euro-title">Euroflex</div>
-                    <div class="euro-sub">GUJARAT INDUSTRIAL</div>
-                </div>
+<section class="trust-section" id="about">
+    <div class="container">
+        <p class="trust-label">Trusted by Hundreds of Companies Globally</p>
+        
+        <div class="logo-viewport">
+            <div class="logo-track">
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
+                <div class="logo-item"><img src="assets/images/euroflex.png" alt="Euroflex"></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="specs" id="specs">
         <div class="container">
@@ -170,13 +162,13 @@
                     <tbody>
                         <tr><td>Pipe Diameter Range</td><td>20mm to 1600mm (3/4" to 63")</td></tr>
                         <tr><td>Pressure Ratings</td><td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td></tr>
-                        <tr><td>Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11, SDR 9</td></tr>
-                        <tr><td>Operating Temperature</td><td>-40°C to +80°C (-40°F to +176°F)</td></tr>
-                        <tr><td>Expected Service Life</td><td>50+ Years (at 20°C ambient, PN 10)</td></tr>
-                        <tr><td>Material Density</td><td>> 0.94 g/cm³ (High Density)</td></tr>
-                        <tr><td>Certification Standards</td><td>IS 4984:2016, ISO 4427, ASTM D3035</td></tr>
-                        <tr><td>Joint Configuration Options</td><td>Butt Fusion, Electrofusion, Compression Mechanical</td></tr>
-                        <tr><td>Coil Lengths</td><td>Up to 500m (for diameters up to 110mm)</td></tr>
+                        <tr><td>Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td></tr>
+                        <tr><td>Operating Temperature</td><td>-40C to +80C (-40F to +176F)</td></tr>
+                        <tr><td>Service Life</td><td>50+ Years (at 20 degrees C, PN 10)</td></tr>
+                        <tr><td>Material Density</td><td>0.95 - 0.96 g/cm3</td></tr>
+                        <tr><td>Certification Standards</td><td>IS 5984, ISO 4427, ASTM D3035</td></tr>
+                        <tr><td>Joint Type</td><td>Butt Fusion, Electrofusion, Mechanical</td></tr>
+                        <tr><td>Coil Lengths</td><td>Up to 500m (smaller diameters)</td></tr>
                         <tr><td>Country of Origin</td><td>🇮🇳 India</td></tr>
                     </tbody>
                 </table>
@@ -184,7 +176,7 @@
 
             <div class="centered" style="margin-top: 40px;">
                 <button class="btn btn-outline-white btn-lg" id="downloadDatasheetBtn" onclick="openModal('catalogueModal')">
-                    <span style="margin-right:8px;">📥</span> Download Full Technical Datasheet
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download Full Technical Datasheet
                 </button>
             </div>
         </div>
@@ -201,42 +193,42 @@
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
                     <h3 class="feature-title">Superior Chemical Resistance</h3>
-                    <p class="feature-desc">HDPE pipes withstand a wide range of corrosive chemicals, acids, and alkalis. Unlike metal, they won't corrode, rust, or scale, guaranteeing pure water quality and extended lifespan.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="feature-title">Exceptional Flexibility & Durability</h3>
-                    <p class="feature-desc">Highly resistant to sudden impacts and pressure surges. Their flexibility makes them suitable for earthquake-prone areas, unstable soils, and uneven trenchless terrain.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
                     </div>
                     <h3 class="feature-title">Leak-Proof Fusion Welding</h3>
-                    <p class="feature-desc">Pipes are joined using butt fusion or electrofusion, creating continuous systems with zero leakage points. This eliminates water loss and ensures a highly secure network.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="feature-title">Cost-Effective Long-Term Solution</h3>
-                    <p class="feature-desc">Extremely low maintenance requirements coupled with an extended service life provide unparalleled cost savings over the pipe's lifetime compared to traditional materials.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="feature-title">Environmentally Sustainable</h3>
-                    <p class="feature-desc">HDPE is a 100% recyclable material with a significantly lower carbon footprint during both manufacturing and transportation compared to steel or concrete piping.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <svg class="feature-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                     </div>
                     <h3 class="feature-title">Certified Quality Assurance</h3>
-                    <p class="feature-desc">Every batch is rigorously tested in our in-house lab. Manufactured to strictly meet and exceed critical BIS, ISO, and CE international standards for piping.</p>
+                    <p class="feature-desc">HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
                 </div>
             </div>
 
@@ -253,47 +245,47 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="true">
-                        What makes Mangalam HDPE pipes better than PVC or metal?
+                        What is the purpose of a laser cutter for sheet metal?
                         <span class="faq-icon-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="f-icn"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                     <div class="faq-answer open">
-                        <p>HDPE (High-Density Polyethylene) pipes are highly flexible, resistant to corrosion and chemicals, and use leak-proof fusion joints. Unlike metal, they won't rust, and unlike PVC, they are shatter-resistant and handle pressure surges far better.</p>
+                        <p>It is designed to cut various types of sheet metal with precision, allowing for intricate designs and shapes that are essential in manufacturing processes.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        What are the common applications of your HDPE pipes?
+                        What are the benefits of using aluminum tubing in manufacturing?
                         <span class="faq-icon-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="f-icn"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Our pipes are widely used in municipal potable water supply, agricultural drip and sprinkler irrigation, industrial chemical and effluent transport, underground gas distribution grids, and drainage systems.</p>
+                        <p>Currently no description available.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Do you provide custom coil lengths?
+                        How is aluminum tubing produced?
                         <span class="faq-icon-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="f-icn"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we offer standard coil lengths ranging from 50m to 500m depending on the pipe diameter (up to 110mm). We can also provide customized continuous lengths to minimize joints for explicit project requirements.</p>
+                        <p>Currently no description available.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        What certification standards do your pipes meet?
+                        What are the common applications of aluminum tubing?
                         <span class="faq-icon-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="f-icn"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p>All our HDPE pipes are strictly manufactured in compliance with IS 4984:2016, ISO 4427, and ASTM D3035 standards. We hold active BIS certifications and ISO 9001:2015 quality management accreditation.</p>
+                        <p>Currently no description available.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        What is the expected service life of a Mangalam HDPE pipe?
+                        Can aluminum tubing be customized?
                         <span class="faq-icon-svg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="f-icn"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p>When installed correctly according to guidelines, Mangalam HDPE pipes have an expected service life well over 50 years under standard operating conditions (20°C ambient), offering a highly cost-effective and permanent solution.</p>
+                        <p>Currently no description available.</p>
                     </div>
                 </div>
             </div>
@@ -301,10 +293,10 @@
             <div class="catalog-box">
                 <div class="cat-text">
                     <h3>Want us to email the entire catalogue?</h3>
-                    <p>Enter your email and an expert will share our exact pipe dimensions and weight chart with you.</p>
+                    <p>Enter your email and an expert will share the catalogue with you.</p>
                 </div>
                 <div class="cat-form">
-                    <input type="email" id="catalogueEmail" class="cat-input" placeholder="Email Address" required>
+                    <input type="email" id="catalogueEmail" class="cat-input" placeholder="Email Address" required> 
                     <button type="button" class="btn btn-primary" id="catalogueSubmitBtn" onclick="openModal('catalogueModal')">Request Catalogue</button>
                 </div>
             </div>
@@ -316,8 +308,8 @@
         <div class="container">
             <div class="app-header">
                 <div>
-                    <h2 class="section-title">Versatile Applications Across Industries</h2>
-                    <p class="section-subtitle narrow" style="margin-bottom:0">From agricultural irrigation to high-pressure industrial lines, our precision-engineered pipes deliver superior performance across diverse sectors.</p>
+                    <h2 class="section-title">Versatile Applications Across<br>Industries</h2>
+                    <p class="section-subtitle narrow" style="margin-bottom:0; text-align: left; margin-left: 0;">From technical textiles to packaging materials, our precision-engineered machinery delivers superior performance across diverse applications.</p>
                 </div>
                 <div class="app-nav">
                     <button class="nav-circle" aria-label="Previous">←</button>
@@ -327,31 +319,31 @@
 
             <div class="app-track">
                 <div class="app-card">
-                    <div class="app-img-wrap"><img src="assets/images/product-agri.png" alt="Agriculture"></div>
+                    <div class="app-img-wrap"><img src="assets/images/hero-bg.png" alt="Fishnet Manufacturing"></div>
                     <div class="app-content">
-                        <h4>Agricultural Irrigation</h4>
-                        <p>High-performance coiled solutions for drip irrigation, sprinkler systems, and farm water distribution networks.</p>
+                        <h4>Fishnet Manufacturing</h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                     </div>
                 </div>
                 <div class="app-card">
-                    <div class="app-img-wrap"><img src="assets/images/hero-bg.png" alt="Water Supply"></div>
+                    <div class="app-img-wrap"><img src="assets/images/hero-bg.png" alt="Fishnet Manufacturing"></div>
                     <div class="app-content">
-                        <h4>Municipal Water Supply</h4>
-                        <p>Safe, non-toxic and corrosion-free pipes certified for potable drinking water distribution across urban infrastructure.</p>
+                        <h4>Fishnet Manufacturing</h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                     </div>
                 </div>
                 <div class="app-card">
-                    <div class="app-img-wrap"><img src="assets/images/product-industrial.png" alt="Industrial"></div>
+                    <div class="app-img-wrap"><img src="assets/images/hero-bg.png" alt="Fishnet Manufacturing"></div>
                     <div class="app-content">
-                        <h4>Industrial & Chemical</h4>
-                        <p>Robust piping systems resistant to aggressive chemicals, acids, and alkalis for safe effluent disposal and process lines.</p>
+                        <h4>Fishnet Manufacturing</h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                     </div>
                 </div>
                 <div class="app-card">
-                    <div class="app-img-wrap"><img src="assets/images/pipe-coils.png" alt="Gas Distribution"></div>
+                    <div class="app-img-wrap"><img src="assets/images/hero-bg.png" alt="Fishnet Manufacturing"></div>
                     <div class="app-content">
-                        <h4>Gas Distribution</h4>
-                        <p>Highly secure PE100 gas pipes ensuring leak-proof connections for city gas distribution and underground networks.</p>
+                        <h4>Fishnet Manufacturing</h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.</p>
                     </div>
                 </div>
             </div>
@@ -401,26 +393,26 @@
         <div class="container">
             <div class="centered">
                 <h2 class="section-title">Trusted Performance. Proven Results</h2>
-                <p class="section-subtitle centered narrow">Hear what our partners have to say about the quality and performance of Mangalam HDPE pipes across various demanding industries.</p>
+                <p class="section-subtitle centered narrow">From innovative Two-For-One Twisters to specialized heat setting machines, we deliver complete solutions for modern textile manufacturing.</p>
             </div>
 
             <div class="test-track" id="testimonialTrack">
                 <div class="test-card">
                     <div class="test-quote-icon">“</div>
-                    <h4 class="test-card-title">Revolutionized our water distribution efficiency!</h4>
-                    <p class="test-body">Mangalam's HDPE pipes have revolutionized our municipal water distribution. Precision engineering delivers the consistent flow and leak-free performance critical for our city blocks.</p>
+                    <h4 class="test-card-title">Revolutionized our FIBC production efficiency!</h4>
+                    <p class="test-body">Meera Industries' TFO machines have revolutionized our FIBC production efficiency. The precision engineering delivers the consistent yarn strength critical for our bulk container applications.</p>
                     <div class="test-author">
                         <div class="author-av"></div>
                         <div class="author-info">
                             <strong>Johann Mueller</strong>
-                            <span>Municipal Director</span>
+                            <span>Production Director</span>
                         </div>
                     </div>
                 </div>
                 <div class="test-card">
                     <div class="test-quote-icon">“</div>
                     <h4 class="test-card-title">Excellent support for specialized applications.</h4>
-                    <p class="test-body">The durability and pressure rating of Mangalam's industrial pipes has significantly improved our chemical transport safety. Excellent support for specialized applications.</p>
+                    <p class="test-body">The durability and performance of Meera's fishnet processing equipment has significantly improved our marine product quality. Excellent support for specialized applications.</p>
                     <div class="test-author">
                         <div class="author-av"></div>
                         <div class="author-info">
@@ -431,25 +423,25 @@
                 </div>
                 <div class="test-card">
                     <div class="test-quote-icon">“</div>
-                    <h4 class="test-card-title">Unmatched flexibility for agricultural irrigation.</h4>
-                    <p class="test-body">For our extensive farm network, laying rigid pipes was impossible. Mangalam's flexible HDPE coils made installation fast and easy, navigating uneven terrain flawlessly.</p>
+                    <h4 class="test-card-title">Excellent support for specialized applications.</h4>
+                    <p class="test-body">The durability and performance of Meera's fishnet processing equipment has significantly improved our marine product quality. Excellent support for specialized applications.</p>
                     <div class="test-author">
                         <div class="author-av"></div>
                         <div class="author-info">
-                            <strong>Sarah Jenkins</strong>
-                            <span>Farm Manager</span>
+                            <strong>Carlos Mendoza</strong>
+                            <span>Operations Manager</span>
                         </div>
                     </div>
                 </div>
                 <div class="test-card">
                     <div class="test-quote-icon">“</div>
                     <h4 class="test-card-title">Provides the exact specifications we need!</h4>
-                    <p class="test-body">For our city gas distribution projects, Mangalam provides the exact high-density specifications we need. Their understanding of stringent safety requirements is exceptional.</p>
+                    <p class="test-body">For our technical textile applications, Meera's specialized machinery provides the exact specifications we need. Their understanding of automotive textile requirements is exceptional.</p>
                     <div class="test-author">
                         <div class="author-av"></div>
                         <div class="author-info">
                             <strong>Rajesh Kumar</strong>
-                            <span>Engineering Head</span>
+                            <span>Manufacturing Head</span>
                         </div>
                     </div>
                 </div>
@@ -461,7 +453,7 @@
         <div class="container">
             <div class="centered">
                 <h2 class="section-title">Complete Piping Solutions Portfolio</h2>
-                <p class="section-subtitle centered">From rugged industrial pipes to specialized agricultural coils, we deliver complete solutions for modern infrastructure.</p>
+                <p class="section-subtitle centered">From innovative Two-For-One Twisters to specialized heat setting machines, we deliver complete solutions for modern textile manufacturing.</p>
             </div>
 
             <div class="sol-grid">
@@ -531,7 +523,7 @@
                 <div class="cta-right">
                     <div class="cta-form-box">
                         <h4>Contact Us Today</h4>
-                        <form onsubmit="submitQuote(event)" id="quoteForm">
+                        <form onsubmit="submitQuote(event)" id="quoteForm" novalidate>
                             <input type="text" class="form-input mb" placeholder="Full Name" required id="fullName">
                             <input type="text" class="form-input mb" placeholder="Company Name" required>
                             <input type="email" class="form-input mb" placeholder="Email Address" required id="emailAddr">
@@ -551,13 +543,9 @@
         <div class="container">
             <div class="footer-banner">
                 <div class="f-logo">
-                    <div class="logo-box">
-                        <span class="logo-mark">M</span>
-                        <div class="logo-text-group">
-                            <span class="logo-main" style="color:#e31e24">MangaLam</span>
-                            <span class="logo-sub">HDPE | PIPES</span>
-                        </div>
-                    </div>
+            <a href="#" style="text-decoration:none;">
+                <img src="assets/images/logo.png" alt="Mangalam Pipes Logo" class="logo" onerror="this.src='https://via.placeholder.com/150x50?text=MANGALAM+PIPES'">
+            </a>
                 </div>
                 <div class="f-banner-text">
                     Premium <span style="color:#1b264f">HDPE Pipes & Fittings<br>Manufacturer</span> in South India
@@ -637,7 +625,7 @@
                 <h3>Let us email the entire catalogue to you</h3>
             </div>
             <div class="modal-body">
-                <form onsubmit="handleModalSubmit(event, 'catalogueModal')">
+                <form onsubmit="handleModalSubmit(event, 'catalogueModal')" novalidate>
                     <div class="input-group">
                         <label>Your Email *</label>
                         <input type="email" placeholder="example@gmail.com" required>
@@ -656,33 +644,42 @@
 
     <div class="modal-overlay" id="quoteModal" onclick="closeModalOnBgClick(event, 'quoteModal')">
         <div class="modal-box">
-            <button class="modal-close" onclick="closeModal('quoteModal')" aria-label="Close">✕</button>
             <div class="modal-header">
-                <h3>Request a call back</h3>
+                <h2>Request a call back</h2>
+                <button class="modal-close" onclick="closeModal('quoteModal')" aria-label="Close">&times;</button>
             </div>
-            <div class="modal-body">
-                <form onsubmit="handleModalSubmit(event, 'quoteModal')">
-                    <div class="input-group">
-                        <input type="text" placeholder="Full Name" class="clean-input" required>
+
+            <form class="modal-body" onsubmit="event.preventDefault(); document.getElementById('quoteBtnText').innerText='Submitted!'; setTimeout(()=>closeModal('quoteModal'), 1000);">
+                <div class="cb-form-group">
+                    <input class="cb-input" type="text" placeholder="Full Name" required>
+                </div>
+
+                <div class="cb-form-group">
+                    <input class="cb-input" type="text" placeholder="Company Name">
+                </div>
+
+                <div class="cb-form-group">
+                    <input class="cb-input" type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="cb-form-group">
+                    <div class="cb-phone-input-container">
+                        <div class="cb-country-code">
+                            <span>+91</span>
+                            <span class="cb-arrow-down">▼</span>
+                        </div>
+                        <input class="cb-input-phone" type="tel" placeholder="7003026616" required>
                     </div>
-                    <div class="input-group">
-                        <input type="text" placeholder="Company Name" class="clean-input" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" placeholder="Email Address" class="clean-input" required>
-                    </div>
-                    <div class="input-group phone-group clean-input">
-                        <div class="phone-prefix">+91 ⌄</div>
-                        <input type="tel" placeholder="7003026616" required>
-                    </div>
-                    <div class="modal-footer right">
-                        <button type="submit" class="btn btn-submit-quote">Submit Form</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+
+                <div class="cb-modal-footer">
+                    <button type="submit" id="quoteBtnText" class="cb-submit-btn">Submit Form</button>
+                </div>
+            </form>
         </div>
     </div>
 
+    <div id="successToast" style="display:none;"></div>
     <script src="script.js"></script>
 </body>
 </html>

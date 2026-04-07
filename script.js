@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Mobile Navigation Toggle
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Expose function globally to bind it in HTML inline handlers
         window.closeMobileNav = () => {
             hamburger.classList.remove('open');
             hamburger.setAttribute('aria-expanded', 'false');
@@ -23,12 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    // Image Carousel Logic
     const mainImg = document.getElementById('heroMainImg');
     const thumbs = document.querySelectorAll('.thumb-item');
     const heroPrev = document.getElementById('heroPrev');
     const heroNext = document.getElementById('heroNext');
     let currentIndex = 0;
 
+    /**
+     * Updates the main carousel image to match the thumbnail at the given index
+     * @param {number} index - The target image index
+     */
     function goToImg(index) {
         if (!mainImg || thumbs.length === 0) return;
         index = (index + thumbs.length) % thumbs.length;
@@ -50,12 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroPrev) heroPrev.addEventListener('click', () => goToImg(currentIndex - 1));
     if (heroNext) heroNext.addEventListener('click', () => goToImg(currentIndex + 1));
 
+    // Image Zoom Functionality Setup
     const imgWrap = document.getElementById('heroMainImgWrap');
     const zoomLens = document.getElementById('zoomLens');
     const zoomResult = document.getElementById('zoomResult');
 
     if (imgWrap && mainImg && zoomLens && zoomResult) {
 
+        /**
+         * Calculates and updates the zoom lens and zoomed preview position
+         * @param {MouseEvent|TouchEvent} e - the mouse or touch event
+         */
         function moveLens(e) {
             e.preventDefault();
             const rect = imgWrap.getBoundingClientRect();
@@ -121,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Horizontal scrolling navigation for Applications Track
     const appTrack = document.querySelector('.app-track');
     const appNavBtns = document.querySelectorAll('.app-nav .nav-circle');
 
@@ -163,16 +176,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // FAQ Accordion Functionality
     const faqBtns = document.querySelectorAll('.faq-question');
     faqBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
+            // Close all other accordions
             faqBtns.forEach(b => {
                 b.setAttribute('aria-expanded', 'false');
                 b.nextElementSibling.classList.remove('open');
             });
 
+            // Toggle current accordion
             if (!isExpanded) {
                 btn.setAttribute('aria-expanded', 'true');
                 btn.nextElementSibling.classList.add('open');
@@ -195,6 +211,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.submitQuote = function(e) {
         e.preventDefault();
+        const form = e.target;
+        if (!form.checkValidity()) {
+            showToast('Please fill out all required fields.');
+            return;
+        }
+
         const btn = document.getElementById('quoteSubmitBtn');
         btn.textContent = 'Submitting...';
         btn.disabled = true;
@@ -202,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showToast('Quote request sent successfully! We will contact you shortly.');
             btn.textContent = 'Request Custom Quote';
             btn.disabled = false;
-            e.target.reset();
+            form.reset();
         }, 1200);
     };
 
@@ -252,7 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.handleModalSubmit = function(e, id) {
         e.preventDefault();
-        const btn = e.target.querySelector('button[type="submit"]');
+        const form = e.target;
+        if (!form.checkValidity()) {
+            showToast('Please fill out all required fields.');
+            return;
+        }
+
+        const btn = form.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
         btn.textContent = 'Processing...';
         btn.disabled = true;
@@ -262,24 +290,39 @@ document.addEventListener('DOMContentLoaded', () => {
             window.showToast('Request submitted successfully!');
             btn.textContent = originalText;
             btn.disabled = false;
-            e.target.reset();
+            form.reset();
         }, 800);
     };
 
+    // Sticky Header Scroll Logic Setup
+    // Requirement: appears when scrolling beyond the first fold, disappears when scrolling back up
     const header = document.querySelector('.primary-nav');
     let lastScrollY = window.scrollY;
+    
+    // Capture the initial navigation bar height to use as padding offset
+    const navHeight = header ? header.offsetHeight : 72;
+    
     if (header) {
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY > window.innerHeight * 0.8) {
+            const threshold = window.innerHeight * 0.8; // Approx end of first fold
+            
+            if (currentScrollY > threshold) {
+                // Apply sticky and padding to prevent layout shift
+                document.body.style.paddingTop = navHeight + 'px';
+                
                 if (currentScrollY < lastScrollY) {
+                    // Scrolling up: Header should hide according to spec
                     header.classList.remove('is-sticky');
                     header.classList.add('is-hiding');
                 } else {
+                    // Scrolling down: Header should appear and be sticky
                     header.classList.remove('is-hiding');
                     header.classList.add('is-sticky');
                 }
             } else {
+                // Remove padding shift and sticky states when back above first fold
+                document.body.style.paddingTop = '0';
                 header.classList.remove('is-sticky');
                 header.classList.remove('is-hiding');
             }
